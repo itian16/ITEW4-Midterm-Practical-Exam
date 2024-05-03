@@ -1,0 +1,110 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DBBAA4;
+}
+
+/* HEADER */
+header {
+    background-color: #000000;
+    padding: 15px 0;
+}
+
+/* NAVIGATION BAR */
+nav{
+    margin-right: 15px;
+    text-align: right;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover  {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+/* HOMEPAGE -> Web-Title-Header */
+#web-title-header{
+    text-align: center;
+    background-color: #E15D39;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#website-name-text{
+    display: inline-block;
+    margin-top: 170px;
+    width: 1040px;
+    height: 110px;
+}
+
+#web-title-header p{
+    margin-top: 0px;
+    color:#DBBAA4;
+    display: inline-block;
+    width: 55%;
+    font-size: 20px;
+}
+
+/* ABOUT US */
+#about-us-details{
+    height: 400px;
+    display:flex;
+}
+
+#about-us-details #detail1{
+    width: 100%;
+    padding: 100px;
+    font-size: 20px;
+    text-align: justify;
+    color:#22160F;
+}
+
+#about-us-details #detail2{
+    width: 100%;
+    font-size: 20px;
+    background-color: #CBAB96;
+    color:#22160F;
+    padding: 100px;
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    position:relative;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer .social-media a{
+    color: white;
+}
+
+footer .social-media a:hover {
+    color: #DBBAA4;
+}
+
+footer .social-media{
+    margin-top: -10px;
+}
