@@ -73,6 +73,7 @@ nav ul li a:hover  {
     width: 100%;
     padding: 100px;
     font-size: 20px;
+    background-color: #F49F87;
     text-align: justify;
     color:#22160F;
 }
@@ -80,7 +81,7 @@ nav ul li a:hover  {
 #about-us-details #detail2{
     width: 100%;
     font-size: 20px;
-    background-color: #CBAB96;
+    background-color: #DD866E;
     color:#22160F;
     padding: 100px;
     text-align: justify;
@@ -102,7 +103,7 @@ footer .social-media a{
 }
 
 footer .social-media a:hover {
-    color: #DBBAA4;
+    color: #f0a675;
 }
 
 footer .social-media{
