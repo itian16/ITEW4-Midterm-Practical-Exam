@@ -65,7 +65,7 @@ nav ul li a:hover  {
 
 /* ABOUT US */
 #about-us-details{
-    height: 1010px;
+    height: 1070px;
     display:flex;
 }
 
@@ -89,7 +89,7 @@ nav ul li a:hover  {
 #about-us-details #detail1 #whychoosedala-girl-img{
     height: 800px;
     width: 562px;
-    margin-top:-700px;
+    margin-top:-900px;
     margin-left:-100px;
     position: sticky;
 }
@@ -139,9 +139,14 @@ nav ul li a:hover  {
 #about-us-details #detail2 #bestseller-product-img{
     height: 682px;
     width: 344px;
-    margin-top:-400px;
+    margin-top:-345px;
     margin-right: -100px;
     float: right;
+}
+
+/* ABOUT DALA */
+#about-dala-details{
+    height: 1010px;
 }
 
 /* FOOTER */
