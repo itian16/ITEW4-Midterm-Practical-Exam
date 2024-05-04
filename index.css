@@ -2,7 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #DBBAA4;
+    background-color: #79A3A4;
 }
 
 /* HEADER */
@@ -40,6 +40,17 @@ nav ul li a:hover  {
 }
 
 /* HOMEPAGE -> Web-Title-Header */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #web-title-header{
     text-align: center;
     background-image: url('imgsrc/header-bg-img.png');
@@ -53,6 +64,7 @@ nav ul li a:hover  {
     margin-top: 160px;
     width: 500px;
     height: 300px;
+    animation: slideDown 1s ease forwards;
 }
 
 #web-title-header p{
@@ -61,6 +73,7 @@ nav ul li a:hover  {
     display: inline-block;
     width: 40%;
     font-size: 25px;
+    animation: slideDown 1s ease forwards;
 }
 
 /* ABOUT US */
@@ -146,12 +159,44 @@ nav ul li a:hover  {
 
 /* ABOUT DALA */
 #about-dala-details{
-    height: 1010px;
+    background-image: url('imgsrc/about-dala-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+
+#about-dala-details #about-data-text{
+    margin-top: 140px;
+    margin-left: 80px;
+    color: #1B3653;
+    font-size: 90px;
+}
+
+#about-dala-details #cont-about-dala{
+    margin-left: 80px;
+}
+
+#about-dala-details #cont-about-dala p{
+    margin-top: -60px;
+    width: 45%;
+    text-align: justify;
+    font-size: 20px;
+    color: #1B3653;
+}
+
+#aboutus-4layout{
+    position: absolute;
+    right: 0;
+    transform: translateY(-75%);
+    margin-right: 40px;
+    height: 800px;
+    width: 800px;
+    margin-top: -70px;
 }
 
 /* FOOTER */
 footer {
-    position:relative;
+    position: relative;
     background-color: #79A3A4;
     color: #fff;
     padding: 10px 0;
