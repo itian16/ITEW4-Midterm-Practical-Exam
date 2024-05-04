@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -8,13 +9,14 @@ body {
 /* HEADER */
 header {
     background-color: #79A3A4;
+    color: #fff;
     padding: 15px 0;
 }
 
 /* NAVIGATION BAR */
 nav{
     margin-right: 15px;
-    text-align: right;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -39,7 +41,7 @@ nav ul li a:hover  {
     text-decoration: none;
 }
 
-/* HOMEPAGE -> Web-Title-Header */
+/* Homepage -> Web-Title-Header */
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -76,9 +78,14 @@ nav ul li a:hover  {
     animation: slideDown 1s ease forwards;
 }
 
-/* ABOUT US */
+/* About Us */
+#about-us-title-header{
+    height: 300px;
+    position: relative;
+}
+
 #about-us-details{
-    height: 1070px;
+    height: 900px;
     display:flex;
 }
 
@@ -92,19 +99,9 @@ nav ul li a:hover  {
 }
 
 #about-us-details #detail1 #detail1-p{
-    width: 45%;
+    width: 90%;
     padding: 10px;
     font-size: 23px;
-    margin-left: 440px;
-    margin-top: -30px;
-}
-
-#about-us-details #detail1 #whychoosedala-girl-img{
-    height: 800px;
-    width: 562px;
-    margin-top:-900px;
-    margin-left:-100px;
-    position: sticky;
 }
 
 #about-us-details #detail2{
@@ -149,38 +146,29 @@ nav ul li a:hover  {
     text-align: justify;
 }
 
-#about-us-details #detail2 #bestseller-product-img{
-    height: 682px;
-    width: 344px;
-    margin-top:-345px;
-    margin-right: -100px;
-    float: right;
-}
-
 /* ABOUT DALA */
 #about-dala-details{
-    background-image: url('imgsrc/about-dala-bg-img.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #E2F7FA;
     height: 1080px;
 }
 
 #about-dala-details #about-data-text{
     margin-top: 140px;
-    margin-left: 80px;
+    text-align: center;
     color: #1B3653;
     font-size: 90px;
 }
 
 #about-dala-details #cont-about-dala{
     margin-left: 80px;
+    margin-right: 80px;
 }
 
 #about-dala-details #cont-about-dala p{
     margin-top: -60px;
-    width: 45%;
+    width: 100%;
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
     color: #1B3653;
 }
 
@@ -210,9 +198,154 @@ footer .social-media a{
 }
 
 footer .social-media a:hover {
-    color: #f0a675;
+    color: #a1e1ff;
 }
 
 footer .social-media{
     margin-top: -10px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    nav{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #web-title-header{
+        background-image: url('imgsrc/header-bg-image.png');
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #website-name-text{
+        margin-left: 100px;
+        margin-top: 170px;
+        width: 580px;
+        height: 60px;
+    }
+
+    #web-title-header p{
+        margin-top: 10px;
+        color:#DBBAA4;
+        margin-left: 100px;
+        width: 75%;
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    #web-title-header a{
+        text-decoration: none;
+        color: #DBBAA4;
+        background-color: #1E140E;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin-left: 100px;
+    }
+
+    #web-title-header a:hover {
+        text-decoration: none;
+        color: #1E140E;
+        background-color: #DBBAA4;
+        padding: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-left: 100px;
+    }
+
+    #about-us-details{
+        height: 1000px;
+        display:flex;
+    }
+
+    #about-us-details #detail1{
+        width: 100%;
+        padding: 50px;
+        font-size: 25px;
+        text-align: justify;
+        color:#22160F;
+    }
+
+    #about-us-details #detail2{
+        width: 100%;
+        font-size: 25px;
+        background-color: #CBAB96;
+        color:#22160F;
+        padding: 50px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    nav{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #web-title-header{
+        background-image: url('imgsrc/header-bg-image.png');
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #website-name-text{
+        margin-left: 100px;
+        margin-top: 210px;
+        width: 500px;
+        height: 70px;
+    }
+
+    #web-title-header p{
+        margin-top: 15px;
+        color:#DBBAA4;
+        margin-left: 100px;
+        width: 75%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #web-title-header a{
+        text-decoration: none;
+        color: #DBBAA4;
+        background-color: #1E140E;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin-left: 100px;
+    }
+
+    #web-title-header a:hover {
+        text-decoration: none;
+        color: #1E140E;
+        background-color: #DBBAA4;
+        padding: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-left: 100px;
+    }
+
+    #about-us-details{
+        height: 700px;
+        display:flex;
+    }
+
+    #about-us-details #detail1{
+        width: 100%;
+        padding: 50px;
+        font-size: 20px;
+        text-align: justify;
+        color:#22160F;
+    }
+
+    #about-us-details #detail2{
+        width: 100%;
+        font-size: 20px;
+        background-color: #CBAB96;
+        color:#22160F;
+        padding: 50px;
+        text-align: justify;
+    }
 }
